@@ -1,0 +1,3 @@
+[submodule "ctci"]
+	path = ctci
+	url = git@github.com:waltherg/ctci.git
