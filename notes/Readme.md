@@ -2,7 +2,11 @@
 
 ## C
 
-### String literals
+### Character and String Literals
+
+String literals are enclosed by double quotation marks `""`.
+Character literals are enclosed by single quotation marks `''`.
+
 Don't compare `char` to string literal:
 ```C
 char str[10];
@@ -16,6 +20,8 @@ char str[10];
 if(str[0] == '0')
     // gcc is happy
 ```
+
+For string comparison, use `strcmp` from `string.h`.
 
 ### Character Arrays
 Character arrays are initialized with random characters.
