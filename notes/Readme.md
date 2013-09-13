@@ -52,3 +52,25 @@ empty[17] = -128
 empty[18] = 0
 empty[19] = 0
 ```
+
+### For Loops
+`for` loops can have multiple ''initialization statements'' (is this the correct
+term?) but not multiple termination conditions.
+
+This works as expected:
+
+```C
+for(i=0, j=0; i < length; i++)
+```
+
+Here, the left-hand termination condition is ignroed:
+```C
+for(i=0; i<10, i<3; i++)
+    printf("i = %d\n", i);
+```
+prints
+```bash
+i = 0
+i = 1
+i = 2
+```
